@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/popUpMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:clickable="true"
+        android:contentDescription="Option Menu"
+        android:focusable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_menu_24"
+        tools:ignore="HardcodedText" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/numpad_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/num_0" />
+
+        <ImageView
+            android:id="@+id/sym_dot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/numpad_0"
+            app:layout_constraintStart_toEndOf="@+id/numpad_0"
+            app:srcCompat="@drawable/sym_dot" />
+
+        <ImageView
+            android:id="@+id/sym_equals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/sym_dot"
+            app:srcCompat="@drawable/sym_equal" />
+
+        <ImageView
+            android:id="@+id/numpad_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/numpad_0"
+            app:layout_constraintStart_toStartOf="@+id/numpad_0"
+            app:srcCompat="@drawable/num_1" />
+
+        <ImageView
+            android:id="@+id/numpad_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/numpad_0"
+            app:layout_constraintStart_toEndOf="@+id/numpad_1"
+            app:srcCompat="@drawable/num_2" />
+
+        <ImageView
+            android:id="@+id/numpad_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/numpad_4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/num_7" />
+
+        <ImageView
+            android:id="@+id/numpad_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/sym_dot"
+            app:layout_constraintEnd_toStartOf="@+id/sym_equals"
+            app:layout_constraintStart_toEndOf="@+id/numpad_2"
+            app:srcCompat="@drawable/num_3" />
+
+        <ImageView
+            android:id="@+id/sym_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/sym_equals"
+            app:layout_constraintEnd_toEndOf="@+id/sym_equals"
+            app:srcCompat="@drawable/sym_clear" />
+
+        <ImageView
+            android:id="@+id/numpad_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/numpad_1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/num_4" />
+
+        <ImageView
+            android:id="@+id/numpad_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/numpad_2"
+            app:layout_constraintStart_toEndOf="@+id/numpad_4"
+            app:srcCompat="@drawable/num_5" />
+
+        <ImageView
+            android:id="@+id/numpad_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/numpad_3"
+            app:layout_constraintEnd_toStartOf="@+id/sym_clear"
+            app:layout_constraintStart_toEndOf="@+id/numpad_5"
+            app:srcCompat="@drawable/num_6" />
+
+        <ImageView
+            android:id="@+id/numpad_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/numpad_5"
+            app:layout_constraintStart_toEndOf="@+id/numpad_7"
+            app:srcCompat="@drawable/num_8" />
+
+        <ImageView
+            android:id="@+id/numpad_9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/numpad_6"
+            app:layout_constraintStart_toEndOf="@+id/numpad_8"
+            app:srcCompat="@drawable/num_9" />
+
+        <ImageView
+            android:id="@+id/sym_bracket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/sym_clear"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/numpad_9"
+            app:srcCompat="@drawable/sym_bracket" />
+
+        <ImageView
+            android:id="@+id/sym_divide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/numpad_7"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/sym_divide" />
+
+        <ImageView
+            android:id="@+id/sym_multiply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/numpad_8"
+            app:layout_constraintStart_toEndOf="@+id/sym_divide"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/sym_multiply" />
+
+        <ImageView
+            android:id="@+id/sym_minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/numpad_9"
+            app:layout_constraintStart_toEndOf="@+id/sym_multiply"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/sym_minus" />
+
+        <ImageView
+            android:id="@+id/sym_plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/sym_bracket"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/sym_minus"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/sym_plus" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/equation_box"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/oswald"
+        android:textAppearance="@style/TextAppearance.Material3.DisplaySmall"
+        android:text="0"
+        android:lines="1"
+        android:padding="2dp"
+        android:textAlignment="textEnd"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="@+id/constraintLayout"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout"
+        tools:ignore="HardcodedText" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/history_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/oswald"
+        android:lines="1"
+        android:padding="2dp"
+        android:text=""
+        android:textAlignment="textEnd"
+        android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+        app:layout_constraintStart_toStartOf="@+id/display_result"
+        app:layout_constraintTop_toBottomOf="@+id/app_title" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/app_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/oswald"
+        android:lines="1"
+        android:padding="2dp"
+        android:text="Calculator"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Overline"
+        app:layout_constraintBottom_toBottomOf="@+id/popUpMenu"
+        app:layout_constraintEnd_toEndOf="@+id/constraintLayout"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout"
+        app:layout_constraintTop_toTopOf="@+id/popUpMenu"
+        tools:ignore="HardcodedText" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:tooltipText="Display Result"
+        android:id="@+id/display_result"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/oswald"
+        android:padding="2dp"
+        android:text="0"
+        android:lines="1"
+        android:textAlignment="textEnd"
+        android:textAppearance="@style/TextAppearance.Material3.DisplayLarge"
+        app:layout_constraintBottom_toTopOf="@+id/equation_box"
+        app:layout_constraintEnd_toEndOf="@+id/equation_box"
+        app:layout_constraintStart_toStartOf="@+id/equation_box" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
