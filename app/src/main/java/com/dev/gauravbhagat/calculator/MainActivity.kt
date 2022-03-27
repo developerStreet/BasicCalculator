@@ -128,11 +128,7 @@ class MainActivity : AppCompatActivity(), PopupMenu.OnMenuItemClickListener, Vie
     override fun onMenuItemClick(item: MenuItem?): Boolean {
         return when (item?.itemId) {
             R.id.pop_up_sound -> {
-                Toast.makeText(applicationContext, "Test Sound", Toast.LENGTH_SHORT).show()
-                true
-            }
-            R.id.about_us_pop -> {
-                Toast.makeText(applicationContext, "Test About", Toast.LENGTH_SHORT).show()
+                Toast.makeText(applicationContext, "Sound ON", Toast.LENGTH_SHORT).show()
                 true
             }
             else -> {
